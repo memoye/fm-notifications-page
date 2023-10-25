@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --primary-red: 246, 83, 81;
+    --primary-blue: 10, 49, 123;
+
+    --neutral: 255, 255, 255;
+    --neutral-lightest: 247, 250, 253;
+    --neutral-lighter: 229, 239, 250;
+    --neutral-light: 221, 231, 238;
+    --neutral-medium: 147, 157, 174;
+    --neutral-dark: 94, 103, 120;
+    --neutral-darkest: 28, 32, 43;
+  }
+}

@@ -29,8 +29,3 @@ The designs were created to the following widths:
 ### Body Copy
 
 - Font size (paragraph): 16px
-
-### Font
-
-- Family: [Plus Jakarta Sans](https://fonts.google.com/specimen/Plus+Jakarta+Sans)
-- Weights: 500, 800
