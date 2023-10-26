@@ -30,3 +30,19 @@ function readNotif(notifToRead, index) {
     readAllBtn.setAttribute('disabled', true)
   }
 }
+
+// extra
+const hearts = ['💖', '💝', '💓', '💘', '❤️‍🩹',]
+const hrt = document.querySelector('#hrt')
+
+// for (let i = 0; i < hearts.length; i++) {
+let i = 0
+
+setInterval(() => {
+  hrt.innerText = hearts[i]
+  i < hearts.length - 1 ?
+    i++
+    : i = 0
+}, 400)
+// }
+
