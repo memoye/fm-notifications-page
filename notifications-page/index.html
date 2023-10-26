@@ -13,7 +13,40 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,500;0,800;1,400&display=swap"
     rel="stylesheet">
-  <script defer src="./main.js"></script>
+  <script defer>
+    const notifs = document.querySelectorAll(".notif"),
+      newNotifsCount = document.querySelector('#newNotifsCount'),
+      readAllBtn = document.querySelector("#allRead")
+
+    let newNotifsAmt = document.querySelectorAll('.notifDot').length
+
+    newNotifsCount.innerText = newNotifsAmt
+
+    readAllBtn.addEventListener('click', readAll)
+
+    notifs.forEach((notif, i) => {
+      notif.addEventListener('click', () => {
+        readNotif(notif, i)
+      })
+    })
+
+    function readAll() {
+      notifs.forEach((notif, i) => {
+        readNotif(notif, i)
+      })
+    }
+
+    function readNotif(notifToRead, index) {
+      notifToRead.classList.remove('bg-neutral-lightest')
+      notifToRead.classList.add('bg-white')
+      if (newNotifsAmt > 0 && document.querySelector(`#notif${index + 1}`) !== null) newNotifsAmt--
+      document.querySelector(`#notif${index + 1}`)?.remove()
+      newNotifsCount.innerText = newNotifsAmt
+      if (newNotifsAmt === 0) {
+        readAllBtn.setAttribute('disabled', true)
+      }
+    }
+  </script>
   <link rel="stylesheet" href="style.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
