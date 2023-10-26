@@ -28,7 +28,7 @@ Users should be able to:
 
 |                            Desktop                             |                        Mobile                        |
 | :------------------------------------------------------------: | :--------------------------------------------------: |
-| ![Large and medium devices](../solutionDemo/NotifPageDesk.gif) | ![Small device](../solutionDemo/NotifPageMobile.gif) |
+| ![Large and medium devices](./solutionDemo/NotifPageDesk.gif) | ![Small device](./solutionDemo/NotifPageMobile.gif) |
 
 ### Links
 
